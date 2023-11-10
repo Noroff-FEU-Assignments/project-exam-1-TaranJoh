@@ -1,4 +1,43 @@
+h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+h2,
+h3,
+nav,
+footer p,
+form {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+nav {
+  background-color: #302e2b;
+  color: #fff;
+  padding: 10px;
+}
+
+p {
+  font-family: "Mukta Vaani", sans-serif;
+}
+
 body {
   background-color: #fcf5e5;
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+footer {
+  background-color: #302e2b;
+  color: #fff;
+  height: 180px;
+}
+
+li {
+  display: inline-block;
+  margin-left: 30px;
 }
