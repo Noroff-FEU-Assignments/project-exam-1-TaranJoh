@@ -14,31 +14,55 @@
     <title>Chapter and Verse</title>
   </head>
   <body>
-    <header>  
-            <div class="logo"><a href="index.html">
-              <img src="/images/logo.png" /></a>
-              <a href="index.html"><h1>Chapter and Verse</h1></a>
-            </div>
-        <div class="search"></div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Book reviews</li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-    <main>
-    
-    </main>
+    <header>
+      <div class="logo">
+        <a href="index.html"> <img src="/images/logo.png" /></a>
+        <a href="index.html"><h1>Chapter and Verse</h1></a>
+      </div>
+      <div class="search-container">
+        <input type="search" class="search" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="current">Book reviews</li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="categories">
+        <ul>
+          <li>Contemporary</li>
+          <li>Crime</li>
+          <li>Fantasy</li>
+          <li>Historical</li>
+          <li>Romance</li>
+          <li>Science Fiction</li>
+        </ul>
+      </nav>
+    </header>
+    <main></main>
     <footer>
-      <form>
-        <label>Get the latest book reviews:</label>
-        <input>your email</input>
-        <button>Subscribe</button>
-      </form>
-      <p>©2023 Chapter and Verse</p>
+      <div class="footer">
+        <form class="newsletter">
+          <label for="newsletter">Get the latest book reviews:</label>
+          <input
+            type="email"
+            name="newsletter"
+            id="newsletter"
+            placeholder="your email"
+          />
+          <button class="cta">Subscribe</button>
+        </form>
+        <div class="social-media">
+          <img src="/images/mdi_twitter.png" alt="Twitter" />
+          <img src="/images/ri_instagram-line.png" alt="instagram" />
+        </div>
+        <div class="copyright">
+          <hr class="line" />
+          <p>©2023 Chapter and Verse</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

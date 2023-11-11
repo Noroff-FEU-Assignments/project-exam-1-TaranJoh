@@ -15,11 +15,13 @@
   </head>
   <body>
     <header>
-      <div class="logo"><a href="index.html">
-        <img src="/images/logo.png" /></a>
+      <div class="logo">
+        <a href="index.html"> <img src="/images/logo.png" /></a>
         <a href="index.html"><h1>Chapter and Verse</h1></a>
-    </div>
-      <div class="search"></div>
+      </div>
+      <div class="search-container">
+        <input type="search" class="search" />
+      </div>
       <nav>
         <ul>
           <li class="current">Home</li>
@@ -33,15 +35,30 @@
       <div class="hero-image">
         <p>"A reader lives a thousand lives before he dies"</p>
       </div>
+      <h2>Latest reviews</h2>
       <div class="latest-posts"></div>
     </main>
     <footer>
-      <form>
-        <label>Get the latest book reviews:</label>
-        <input>your email</input>
-        <button>Subscribe</button>
-      </form>
-      <p>©2023 Chapter and Verse</p>
+      <div class="footer">
+        <form class="newsletter">
+          <label for="newsletter">Get the latest book reviews:</label>
+          <input
+            type="email"
+            name="newsletter"
+            id="newsletter"
+            placeholder="your email"
+          />
+          <button class="cta">Subscribe</button>
+        </form>
+        <div class="social-media">
+          <img src="/images/mdi_twitter.png" alt="Twitter" />
+          <img src="/images/ri_instagram-line.png" alt="instagram" />
+        </div>
+        <div class="copyright">
+          <hr class="line" />
+          <p>©2023 Chapter and Verse</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
