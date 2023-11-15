@@ -144,6 +144,35 @@ footer {
   color: #fcf5e5;
 }
 
+/* ----------- HOME ---------------- */
+
+.home {
+  display: grid;
+  margin-top: 20px;
+}
+
+.hero-image {
+  background-image: url(/images/fall-autumn-books.jpg);
+  height: 480px;
+  background-size: 100%;
+  background-position-y: bottom;
+  display: grid;
+  place-items: center;
+  /* margin-top: 20px; */
+}
+
+.hero-image p {
+  background-color: rgba(217, 211, 197, 0.8);
+  margin-bottom: 50px;
+  padding: 15px 50px;
+  font-family: "Montserrat Alternates", sans-serif;
+  border: solid 1px;
+}
+
+.home h2 {
+  margin-top: 100px;
+}
+
 /* ----------- BLOG LIST ---------------- */
 
 .categories {
