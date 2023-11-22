@@ -90,7 +90,6 @@ li {
 footer {
   background-color: #302e2b;
   color: #fff;
-  height: 180px;
 }
 
 .footer {
@@ -183,4 +182,53 @@ footer {
 
 .categories ul {
   margin: 0px;
+}
+
+/* ----------- ABOUT ---------------- */
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 150px;
+  margin-top: 80px;
+}
+
+.about-heading {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.about-heading img {
+  width: 50px;
+}
+
+.about-heading h2 {
+  text-transform: uppercase;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  align-self: flex-end;
+}
+
+.about-copy {
+  grid-column: 1;
+  font-size: 1.2em;
+  max-width: 550px;
+}
+
+.about-copy p {
+  margin-bottom: 30px;
+}
+
+.about-images {
+  justify-self: end;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  display: grid;
+  grid-gap: 20px;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.about-images img {
+  max-width: 100%;
 }
