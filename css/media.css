@@ -40,6 +40,10 @@
     margin-bottom: 0px;
   }
 
+  .about-heading img {
+    width: 40px;
+  }
+
   .about-images {
     grid-area: 3/1;
     margin: 0px;
@@ -64,6 +68,15 @@
   .hero-image p {
     font-size: 1em;
   }
+
+  .about-copy p,
+  .contact p {
+    font-size: 1em;
+  }
+
+  .contact h2 {
+    font-size: 1.2em;
+  }
 }
 
 /* ---------- PHONE --------- */
@@ -74,8 +87,16 @@
     text-align: center;
   }
 
+  .about-heading img {
+    width: 35px;
+  }
+
   .about-images img {
     height: 300px;
+  }
+
+  .contact {
+    padding: 50px 30px 100px 30px;
   }
 }
 
