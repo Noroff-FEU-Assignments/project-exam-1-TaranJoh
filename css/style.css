@@ -125,11 +125,18 @@ footer {
   margin-right: 5px;
   border-radius: 5%;
   padding-left: 10px;
+  border: solid 1px;
+}
+
+.newsletter input:focus {
+  outline: none;
 }
 
 .newsletter button {
   grid-row: 2;
   width: 110px;
+  border: solid black 1px;
+  border-radius: 3px;
 }
 
 .cta {
@@ -163,7 +170,7 @@ footer {
   background-position-y: bottom;
   display: grid;
   place-items: center;
-  /* margin-top: 20px; */
+  background-repeat: no-repeat;
 }
 
 .hero-image p {
@@ -224,7 +231,6 @@ footer {
 }
 
 .about-images {
-  justify-self: end;
   grid-column: 2;
   grid-row: 1 / span 2;
   display: grid;
