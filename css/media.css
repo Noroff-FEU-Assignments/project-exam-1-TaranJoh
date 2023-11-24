@@ -123,4 +123,8 @@
   .copyright {
     margin-top: 20px;
   }
+
+  .submit {
+    width: 100%;
+  }
 }
