@@ -263,7 +263,7 @@ footer {
   grid-template-columns: repeat(2, auto);
 }
 
-.date {
+#date {
   margin: 0px;
   font-size: 0.9em;
   justify-self: end;
@@ -300,6 +300,12 @@ footer {
 .sidebar h2 {
   text-transform: none;
   font-size: 1.1em;
+}
+
+#sidebar-thumbnail {
+  height: 250px;
+  margin: 5px 0px;
+  object-position: top;
 }
 
 /* ----------- ABOUT ---------------- */
