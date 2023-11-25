@@ -13,9 +13,13 @@ async function fetchAPI() {
     console.log(posts);
 
     for (let i = 0; i < posts.length; i++) {
-      latestPosts.innerHTML += `<div class="post-thumbnail"><a href="blog-post.html?id=${posts[i].id}"><img src="${posts[i]._embedded["wp:featuredmedia"][0].source_url}" alt="Book cover for ${posts[i]._embedded["wp:term"][1][0].name}">
+      if (i === 4) {
+        break;
+      } else {
+        latestPosts.innerHTML += `<div class="post-thumbnail"><a href="blog-post.html?id=${posts[i].id}"><img src="${posts[i]._embedded["wp:featuredmedia"][0].source_url}" alt="Book cover for ${posts[i]._embedded["wp:term"][1][0].name}">
                             <h3>"${posts[i].title.rendered}"</h3>
                             <p>${posts[i]._embedded["wp:term"][1][0].name}</p></div>`;
+      }
     }
   } catch {
     {

@@ -259,7 +259,7 @@ footer {
   grid-gap: 10%;
   max-width: 1000px;
   margin-top: 50px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .blog-post-container img {
@@ -306,17 +306,17 @@ footer {
 .wp-block-quote {
   background-color: rgb(146, 182, 165, 0.6);
   margin: 50px 0px;
-  padding: 10px 30px;
+  padding: 20px 60px;
   font-style: italic;
   border: #302e2b 1px solid;
   text-align: center;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 .wp-block-pullquote p,
 .wp-block-quote p {
   font-family: "Montserrat Alternates", sans-serif;
-  font-size: 1em;
+  font-size: 0.9em;
   margin-bottom: 16px;
 }
 
