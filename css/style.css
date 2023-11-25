@@ -213,7 +213,8 @@ footer {
   font-style: italic;
 }
 
-.latest-posts a {
+.latest-posts a,
+.book-reviews a {
   color: #302e2b;
 }
 
@@ -229,7 +230,28 @@ footer {
   margin: 0px;
 }
 
-/* ----------- BLOG LIST ---------------- */
+.book-reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 2%;
+  grid-row-gap: 10%;
+  padding: 100px 0px;
+}
+
+.blog-list-post img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.title-author {
+  margin: 0px;
+  font-size: 1em;
+  font-style: italic;
+}
+
+/* ----------- BLOG POST ---------------- */
 
 .blog-post-container {
   display: grid;
@@ -244,6 +266,7 @@ footer {
   width: 100%;
   object-fit: cover;
   height: 400px;
+  margin-bottom: 30px;
 }
 
 .blog-post-container h2 {
