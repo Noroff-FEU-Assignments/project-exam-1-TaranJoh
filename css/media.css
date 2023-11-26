@@ -23,6 +23,7 @@
   .latest-reviews {
     width: 95%;
     margin: auto;
+    max-width: 1200px;
   }
 }
 
@@ -132,6 +133,11 @@
 
   .latest-posts img {
     height: 400px;
+    width: 100%;
+  }
+
+  .slide-button {
+    display: none;
   }
 
   .about-copy p,

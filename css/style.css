@@ -195,6 +195,7 @@ footer {
   color: #fff;
   font-size: 1.1em;
   border-radius: 5%;
+  cursor: pointer;
 }
 
 .copyright {
@@ -235,15 +236,18 @@ footer {
   margin-top: 100px;
 }
 
+.latest-reviews {
+  position: relative;
+}
+
 .latest-posts {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   margin-bottom: 100px;
   grid-gap: 50px;
 }
 
 .latest-posts img {
-  width: 100%;
   height: 400px;
   object-fit: cover;
 }
@@ -258,6 +262,43 @@ footer {
 .latest-posts a,
 .book-reviews a {
   color: #302e2b;
+}
+
+.carousel {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.slide-button {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  background-color: #302e2b;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  transform: translateY(-850%);
+}
+
+.slide-button:hover {
+  background-color: #92a8b6;
+}
+
+#prev-slide {
+  left: -25px;
+  bottom: 0px;
+  display: none;
+}
+
+#next-slide {
+  right: -25px;
+  bottom: 0px;
 }
 
 /* ----------- BLOG LIST ---------------- */
