@@ -69,19 +69,41 @@ a h1 {
   margin: 10px;
 }
 
-.search-container {
+.search-container,
+.search-container-mobile {
   display: flex;
   justify-content: end;
   margin-right: 10px;
+}
+
+.search-container {
   margin-top: -50px;
 }
 
-.search {
+.search-container-mobile {
+  margin-top: -25px;
+}
+
+.search,
+.search-mobile {
   width: 56px;
   height: 34px;
   background-color: #92b6a5;
-  border-radius: 15%;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.search {
   margin-bottom: 10px;
+}
+
+.search:focus {
+  width: 20%;
+}
+
+.search-mobile:focus {
+  outline: none;
+  width: 40%;
 }
 
 .fa-magnifying-glass {

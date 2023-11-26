@@ -1,12 +1,16 @@
 /* ---------- DESKTOP --------- */
-@media (min-width: 800px) {
-  .hamburger-menu {
+@media (min-width: 801px) {
+  .search-container-mobile {
     display: none;
   }
 
   .nav-links {
     display: flex;
     justify-content: center;
+  }
+
+  .hamburger-menu {
+    display: none;
   }
 }
 
@@ -15,11 +19,24 @@
   .footer {
     width: 90%;
   }
+
+  .latest-reviews {
+    width: 95%;
+    margin: auto;
+  }
 }
 
 @media (max-width: 1300px) and (min-width: 1001px) {
   .about {
-    width: 90%;
+    width: 95%;
+  }
+
+  .latest-posts {
+    grid-gap: 30px;
+  }
+
+  .latest-posts img {
+    height: 330px;
   }
 
   .about-images {
@@ -44,6 +61,14 @@
 @media (max-width: 1000px) {
   .hero-image {
     height: 400px;
+  }
+
+  .latest-posts {
+    grid-gap: 20px;
+  }
+
+  .latest-posts img {
+    height: 300px;
   }
 
   .about {
@@ -81,8 +106,32 @@
     padding: 20px;
   }
 
+  li {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .nav-links {
+    padding: 25px;
+    position: absolute;
+    background-color: #302e2b;
+    margin-left: -20px;
+  }
+
   .hero-image p {
     font-size: 1em;
+  }
+
+  .latest-posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .latest-posts {
+    grid-gap: 3%;
+  }
+
+  .latest-posts img {
+    height: 400px;
   }
 
   .about-copy p,
@@ -159,5 +208,18 @@
 
   .submit {
     width: 100%;
+  }
+
+  .hero-image {
+    height: 300px;
+  }
+
+  .hero-image p {
+    font-size: 0.7em;
+    padding: 15px 20px;
+  }
+
+  .latest-posts img {
+    height: 270px;
   }
 }
