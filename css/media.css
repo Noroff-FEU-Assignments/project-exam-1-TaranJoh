@@ -1,3 +1,15 @@
+/* ---------- DESKTOP --------- */
+@media (min-width: 800px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 /* ---------- SMALLER THAN DESKTOP --------- */
 @media (max-width: 1300px) {
   .footer {

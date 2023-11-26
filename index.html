@@ -26,6 +26,7 @@
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
+    <script src="https://kit.fontawesome.com/2e065d1207.js" crossorigin="anonymous"></script>
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/media.css" rel="stylesheet" />
     <title>Chapter and Verse</title>
@@ -38,9 +39,14 @@
       </div>
       <div class="search-container">
         <input type="search" class="search" />
+        <i class="fa-solid fa-magnifying-glass"></i>
       </div>
       <nav>
-        <ul>
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox" class="hamburger-menu">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </label>
+        <ul class="nav-links">
           <li class="current">Home</li>
           <li><a href="blog-list.html">Book reviews</a></li>
           <li><a href="about.html">About</a></li>

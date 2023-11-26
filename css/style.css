@@ -83,9 +83,22 @@ a h1 {
   margin-bottom: 10px;
 }
 
-ul {
-  display: flex;
-  justify-content: center;
+.fa-magnifying-glass {
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+}
+
+#menu-checkbox {
+  display: none;
+}
+
+#menu-checkbox:checked ~ .nav-links {
+  display: block;
+}
+
+.nav-links {
+  display: none;
 }
 
 li {
