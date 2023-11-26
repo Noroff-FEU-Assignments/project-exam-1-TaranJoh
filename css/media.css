@@ -77,6 +77,10 @@
 }
 
 @media (max-width: 800px) {
+  nav {
+    padding: 20px;
+  }
+
   .hero-image p {
     font-size: 1em;
   }
@@ -88,6 +92,23 @@
 
   .contact h2 {
     font-size: 1.2em;
+  }
+
+  .search-container {
+    display: none;
+  }
+
+  h1 {
+    font-size: 0.9em;
+    line-height: normal;
+  }
+
+  .logo {
+    align-content: center;
+  }
+
+  .logo img {
+    height: 45px;
   }
 }
 

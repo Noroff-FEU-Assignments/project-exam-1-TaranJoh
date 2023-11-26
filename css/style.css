@@ -61,6 +61,7 @@ main,
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 10px;
 }
 
 a h1 {
@@ -87,6 +88,10 @@ a h1 {
   position: absolute;
   padding: 10px;
   text-align: center;
+}
+
+.fa-lg {
+  font-size: 1.4em;
 }
 
 #menu-checkbox {
