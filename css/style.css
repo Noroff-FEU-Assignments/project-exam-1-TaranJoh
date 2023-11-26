@@ -90,18 +90,20 @@ a h1 {
   height: 34px;
   background-color: #92b6a5;
   border-radius: 10px;
-  padding: 5px;
+  padding: 5px 10px;
 }
 
 .search {
   margin-bottom: 10px;
 }
 
-.search:focus {
+.search:focus,
+.search:hover {
   width: 20%;
 }
 
-.search-mobile:focus {
+.search-mobile:focus,
+.search-mobile:hover {
   outline: none;
   width: 40%;
 }
@@ -264,6 +266,8 @@ footer {
   background-color: #92a8b6;
   color: #302e2b;
   padding: 12px;
+  display: grid;
+  justify-content: center;
 }
 
 .categories ul {

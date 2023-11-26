@@ -106,7 +106,7 @@
     padding: 20px;
   }
 
-  li {
+  .nav-links li {
     display: block;
     margin-bottom: 15px;
   }
