@@ -34,6 +34,7 @@
 
   .latest-posts {
     grid-gap: 30px;
+    max-width: 1000px;
   }
 
   .latest-posts img {
@@ -66,10 +67,30 @@
 
   .latest-posts {
     grid-gap: 20px;
+    max-width: 800px;
   }
 
   .latest-posts img {
     height: 300px;
+  }
+
+  .categories {
+    font-size: 0.8em;
+  }
+
+  .categories li {
+    margin-right: 25px;
+  }
+
+  .blog-post-container {
+    max-width: 780px;
+    grid-template-columns: 580px auto;
+    grid-gap: 40px;
+  }
+
+  .book-review p {
+    font-size: 1em;
+    margin-bottom: 25px;
   }
 
   .about {
@@ -127,10 +148,6 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .latest-posts {
-    grid-gap: 3%;
-  }
-
   .latest-posts img {
     height: 400px;
     width: 100%;
@@ -138,6 +155,36 @@
 
   .slide-button {
     display: none;
+  }
+
+  .blog-post-container {
+    grid-template-columns: 1fr;
+    width: 95%;
+    margin-bottom: 50px;
+  }
+
+  .blog-post-container img {
+    height: 250px;
+  }
+
+  .wp-block-pullquote p,
+  .wp-block-quote p {
+    font-size: 0.8em;
+  }
+
+  .wp-block-pullquote,
+  .wp-block-quote {
+    padding: 10px 30px;
+  }
+
+  .sidebar-posts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+
+  #sidebar-thumbnail {
+    height: 100%;
   }
 
   .about-copy p,
@@ -185,6 +232,16 @@
 
   .contact {
     padding: 50px 30px 100px 30px;
+  }
+}
+
+@media (max-width: 540px) {
+  .categories ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 5px;
+    padding: 0px;
   }
 }
 

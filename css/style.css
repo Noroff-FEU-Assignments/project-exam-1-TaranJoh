@@ -50,6 +50,10 @@ body {
   background-color: #fcf5e5;
 }
 
+body {
+  display: grid;
+}
+
 main,
 .footer,
 .latest-posts {
@@ -341,7 +345,7 @@ footer {
 .blog-post-container {
   display: grid;
   grid-template-columns: 700px auto;
-  grid-gap: 10%;
+  grid-gap: 100px;
   max-width: 1000px;
   margin-top: 50px;
   margin-bottom: 100px;
@@ -414,6 +418,14 @@ footer {
   height: 250px;
   margin: 5px 0px;
   object-position: top;
+}
+
+.view-more {
+  color: #197248;
+}
+
+.sidebar-posts {
+  margin-bottom: 10px;
 }
 
 /* ----------- ABOUT ---------------- */
