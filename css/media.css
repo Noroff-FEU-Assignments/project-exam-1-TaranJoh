@@ -25,6 +25,10 @@
     margin: auto;
     max-width: 1200px;
   }
+
+  .ty-message {
+    width: max-content;
+  }
 }
 
 @media (max-width: 1300px) and (min-width: 1001px) {
@@ -242,6 +246,28 @@
 
   .contact {
     padding: 50px 30px 100px 30px;
+  }
+
+  .ty-message {
+    width: 100%;
+    border: none;
+    padding-bottom: 0px;
+  }
+
+  .ty-header,
+  .ty-text {
+    padding: 0% 10%;
+  }
+
+  .ty-footer {
+    padding-bottom: 0px;
+    height: 55px;
+  }
+
+  .ty-close {
+    width: 100%;
+    border-radius: 0px;
+    border: none;
   }
 }
 
