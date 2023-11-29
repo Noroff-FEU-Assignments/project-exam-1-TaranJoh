@@ -1,6 +1,6 @@
 import { displayError } from "./components/error.js";
 
-const url = "https://chapterandverse.taranj.no/wp-json/wp/v2/posts?_embed";
+const url = "https://chapterandverse.taranj.no/wp-json/wp/v2/posts?_embed=wp:term,wp:featuredmedia&per_page=12";
 
 const latestPosts = document.querySelector(".latest-posts");
 
@@ -27,10 +27,9 @@ async function fetchAPI() {
 fetchAPI();
 
 // carousel
-const initSlider = () => {
+function initSlider() {
   const reviewList = document.querySelector(".carousel");
   const slideButtons = document.querySelectorAll(".slide-button");
-  const maxScrollLeft = reviewList.scrollWidth - reviewList.clientWidth;
 
   // slide through posts according to the slide button clicks
   slideButtons.forEach((button) => {
@@ -41,14 +40,18 @@ const initSlider = () => {
     });
   });
 
-  const handleSlideButtons = () => {
+  function handleSlideButtons() {
     slideButtons[0].style.display = reviewList.scrollLeft <= 0 ? "none" : "block";
-    // slideButtons[1].style.display = reviewList.scrollLeft >= maxScrollLeft ? "none" : "block";
-  };
+
+    // calculate maxScrollLeft based on the current reviewList dimensions
+    const maxScrollLeft = reviewList.scrollWidth - reviewList.clientWidth;
+
+    slideButtons[1].style.display = reviewList.scrollLeft < maxScrollLeft ? "block" : "none";
+  }
 
   reviewList.addEventListener("scroll", () => {
     handleSlideButtons();
   });
-};
+}
 
 window.addEventListener("load", initSlider);

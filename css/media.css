@@ -32,9 +32,12 @@
     width: 95%;
   }
 
+  .latest-reviews {
+    max-width: 1000px;
+  }
+
   .latest-posts {
     grid-gap: 30px;
-    max-width: 1000px;
   }
 
   .latest-posts img {
@@ -65,9 +68,12 @@
     height: 400px;
   }
 
+  .latest-reviews {
+    max-width: 800px;
+  }
+
   .latest-posts {
     grid-gap: 20px;
-    max-width: 800px;
   }
 
   .latest-posts img {
@@ -220,6 +226,10 @@
     font-size: 0.8em;
     padding: 15px 30px;
     text-align: center;
+  }
+
+  #modalImage {
+    border: solid #92a8b6 7px;
   }
 
   .about-heading img {
