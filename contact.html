@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Mukta+Vaani&family=Roboto+Condensed:wght@200;300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Mukta+Vaani&family=Roboto+Condensed:wght@200;300;500&display=swap"
       rel="stylesheet"
     />
     <!-- Hotjar Tracking Code for Chapter and Verse -->
@@ -69,16 +69,31 @@
       </p>
       <form class="contact-form">
         <label for="name">Your name:</label>
+        <div class="form-error" id="name-error">Please enter your first and last name</div>
         <input type="text" name="name" id="name" />
         <label for="email">Your email:</label>
+        <div class="form-error" id="email-error">Please enter a valid email address</div>
         <input type="email" name="email" id="email" />
         <label for="subject">Subject:</label>
+        <div class="form-error" id="subject-error">Please specify a subject for your message (min 15 characters)</div>
         <input type="text" name="subject" id="subject" />
         <label for="message">Your message:</label>
+        <div class="form-error" id="message-error">Please enter your message (min 25 characters)</div>
         <textarea name="message " id="message"></textarea>
-        <input type="submit" value="Send" class="cta submit" />
+        <input type="submit" value="Send" class="cta submit" id="send-button" data-modal-target="#ty-message" />
       </form>
       <!-- <img src="/images/ai-generated-reader.png" /> -->
+      <div class="ty-message" id="ty-message">
+        <div class="ty-header">
+          <h2>Thank you for your message!</h2>
+          <button class="ty-close">&times;</button>
+        </div>
+        <div class="ty-text">
+          <p>We will get back to you soon. Check your email for our response</p>
+          <i class="fa-solid fa-book" style="color: #fff"></i>
+        </div>
+      </div>
+      <div id="overlay"></div>
     </main>
     <footer>
       <div class="footer">
@@ -97,5 +112,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/contact.js" type="module"></script>
   </body>
 </html>
