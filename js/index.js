@@ -19,7 +19,7 @@ async function fetchAPI() {
     }
   } catch {
     {
-      latestPosts.innerHTML = displayError("An error occurred when calling the API");
+      latestPosts.innerHTML = displayError(`Something went wrong ˙◠˙ <br> Please try again later!`);
     }
   }
 }

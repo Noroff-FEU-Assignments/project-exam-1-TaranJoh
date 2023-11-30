@@ -66,7 +66,7 @@ export async function getDetails() {
       });
     });
   } catch (error) {
-    container.innerHTML = displayError("An error occurred when calling the API");
+    container.innerHTML = displayError(`Something went wrong ˙◠˙ <br> Please try again later!`);
   }
 }
 
@@ -91,7 +91,7 @@ async function createSidebar() {
     }
   } catch {
     {
-      sidebar.innerHTML = displayError("An error occurred when calling the API");
+      sidebar.innerHTML = displayError(`Something went wrong ˙◠˙ <br> Please try again later!`);
     }
   }
 }

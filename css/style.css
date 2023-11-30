@@ -13,7 +13,8 @@ footer p,
 form,
 .date,
 .cta,
-.ty-close {
+.ty-close,
+.error {
   font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -218,6 +219,16 @@ footer {
 
 .line {
   color: #fcf5e5;
+}
+
+.error {
+  grid-column: span 12;
+  color: #fff;
+  background-color: #ee3838;
+  font-size: 1.2em;
+  padding: 40px;
+  border: solid #000 1px;
+  margin-top: 50px;
 }
 
 /* ----------- HOME ---------------- */
@@ -552,6 +563,10 @@ footer {
 
 .about-images img {
   max-width: 100%;
+}
+
+.about-mobile-img {
+  display: none;
 }
 
 /* ----------- CONTACT ---------------- */

@@ -5,50 +5,6 @@ const url = "https://chapterandverse.taranj.no/wp-json/wp/v2/posts?_embed=wp:ter
 const bookReviews = document.querySelector(".book-reviews");
 
 // fetches all posts from wordpress
-// async function fetchAPI() {
-//   try {
-//     const response = await fetch(url);
-//     const posts = await response.json();
-
-//     console.log(posts);
-
-//     for (let i = 0; i < posts.length; i++) {
-//       bookReviews.innerHTML += `<div class="blog-list-post"><a href="blog-post.html?id=${posts[i].id}"><img src="${posts[i]._embedded["wp:featuredmedia"][0].source_url}" alt="Book cover for ${posts[i]._embedded["wp:term"][1][0].name}">
-//                             <h3>"${posts[i].title.rendered}"</h3>
-//                             <p class="title-author">${posts[i]._embedded["wp:term"][1][0].name} by ${posts[i]._embedded["wp:term"][0][0].name}</p></div>`;
-
-//       // hides posts after 9
-//       if (i > 8) {
-//         const hiddenPosts = document.querySelectorAll(".blog-list-post:nth-child(n+10)");
-//         hiddenPosts.forEach((element, index) => {
-//           element.style.display = "none";
-//         });
-//       }
-
-//       //function that shows more results underneath when button is clicked
-//       const loadMore = document.querySelector(".more-reviews-btn");
-//       const allPosts = document.querySelectorAll(".blog-list-post");
-//       let currentItems = 9;
-
-//       loadMore.addEventListener("click", (e) => {
-//         for (let i = currentItems; i < currentItems + 9; i++) {
-//           if (allPosts[i]) {
-//             allPosts[i].style.display = "block";
-//           }
-//         }
-//         currentItems += 9;
-//       });
-//     }
-//   } catch {
-//     {
-//       bookReviews.innerHTML = displayError("An error occurred when calling the API");
-//     }
-//   }
-// }
-
-// fetchAPI();
-
-// fetches all posts from wordpress
 async function fetchAPI() {
   try {
     const response = await fetch(url);
@@ -113,7 +69,7 @@ async function fetchAPI() {
       });
     }
   } catch {
-    bookReviews.innerHTML = displayError("An error occurred when calling the API");
+    bookReviews.innerHTML = displayError(`Something went wrong ˙◠˙ <br> Please try again later!`);
   }
 }
 
