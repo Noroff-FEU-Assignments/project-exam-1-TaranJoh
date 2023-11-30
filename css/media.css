@@ -1,5 +1,5 @@
 /* ---------- DESKTOP --------- */
-@media (min-width: 801px) {
+@media (min-width: 601px) {
   .search-container-mobile {
     display: none;
   }
@@ -41,7 +41,7 @@
   }
 
   .latest-reviews {
-    max-width: 1000px;
+    max-width: 980px;
   }
 
   .latest-posts {
@@ -77,7 +77,7 @@
   }
 
   .latest-reviews {
-    max-width: 800px;
+    max-width: 730px;
   }
 
   .latest-posts {
@@ -151,20 +151,14 @@
   }
 }
 
+@media (max-width: 800px) and (min-width: 600px) {
+  nav {
+    padding: 2px;
+    font-size: 0.9em;
+  }
+}
+
 @media (max-width: 800px) {
-  .nav-links li {
-    display: block;
-    margin-bottom: 15px;
-  }
-
-  .nav-links {
-    padding: 25px;
-    position: absolute;
-    background-color: #302e2b;
-    margin-left: -20px;
-    margin-top: 13px;
-  }
-
   .search-mobile {
     height: 28px;
   }
@@ -177,17 +171,22 @@
     font-size: 1em;
   }
 
-  .latest-posts {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .latest-posts img {
-    height: 400px;
-    width: 100%;
+  .latest-reviews {
+    max-width: 680px;
   }
 
   .slide-button {
-    display: none;
+    height: 30px;
+    width: 30px;
+    transform: translateY(-1100%);
+  }
+
+  #next-slide {
+    right: -15px;
+  }
+
+  #prev-slide {
+    left: -15px;
   }
 
   .book-reviews {
@@ -248,10 +247,6 @@
     font-size: 1.2em;
   }
 
-  .search-container {
-    display: none;
-  }
-
   h1 {
     font-size: 0.9em;
     line-height: normal;
@@ -266,12 +261,48 @@
   }
 }
 
+@media (max-width: 700px) {
+  .latest-reviews {
+    max-width: 580px;
+  }
+}
+
 /* ---------- PHONE --------- */
 @media (max-width: 600px) {
   .hero-image p {
     font-size: 0.8em;
     padding: 15px 30px;
     text-align: center;
+  }
+
+  .nav-links {
+    padding: 25px;
+    position: absolute;
+    background-color: #302e2b;
+    margin-left: -20px;
+    margin-top: 13px;
+  }
+
+  .nav-links li {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .search-container {
+    display: none;
+  }
+
+  .latest-posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .latest-posts img {
+    height: 320px;
+    width: 100%;
+  }
+
+  .slide-button {
+    display: none;
   }
 
   #modalImage {
