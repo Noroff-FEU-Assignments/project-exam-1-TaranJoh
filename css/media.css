@@ -26,6 +26,10 @@
     max-width: 1200px;
   }
 
+  .blog-list {
+    max-width: 90%;
+  }
+
   .ty-message {
     width: max-content;
   }
@@ -92,6 +96,20 @@
     margin-right: 25px;
   }
 
+  .blog-list {
+    max-width: 95%;
+    padding-bottom: 40px;
+  }
+
+  .blog-list-post img {
+    height: 150px;
+  }
+
+  .book-reviews {
+    padding: 80px 0px 60px 0px;
+    grid-row-gap: 100px;
+  }
+
   .blog-post-container {
     max-width: 780px;
     grid-template-columns: 580px auto;
@@ -144,6 +162,7 @@
     position: absolute;
     background-color: #302e2b;
     margin-left: -20px;
+    margin-top: 13px;
   }
 
   .search-mobile {
@@ -169,6 +188,25 @@
 
   .slide-button {
     display: none;
+  }
+
+  .book-reviews {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 0px;
+    grid-row-gap: 50px;
+    grid-column-gap: 15px;
+  }
+
+  .blog-list {
+    padding-bottom: 20px;
+  }
+
+  .blog-list-post h3 {
+    font-size: 0.8em;
+  }
+
+  .title-author {
+    font-size: 0.7em;
   }
 
   .blog-post-container {

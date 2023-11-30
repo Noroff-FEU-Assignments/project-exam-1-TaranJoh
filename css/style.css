@@ -97,6 +97,7 @@ a h1 {
   background-color: #92b6a5;
   border-radius: 10px;
   padding: 5px 10px;
+  border: solid 1px;
 }
 
 .search {
@@ -331,10 +332,13 @@ footer {
 .book-reviews {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 120px;
-  padding: 100px 0px;
+  padding: 100px 0px 40px 0px;
+}
+
+.hidden {
+  display: none;
 }
 
 .blog-list-post img {
@@ -347,6 +351,29 @@ footer {
   margin: 0px;
   font-size: 1em;
   font-style: italic;
+}
+
+.more-reviews {
+  display: flex;
+  justify-content: center;
+}
+
+.more-reviews-btn {
+  padding: 10px 0px;
+  border: none;
+  border-radius: 0px;
+  width: 100%;
+  color: #000;
+}
+
+.more-reviews-btn:hover {
+  border: none;
+  border-radius: 20px;
+  background-color: #92a8b6;
+}
+
+.blog-list {
+  padding-bottom: 100px;
 }
 
 /* ----------- BLOG POST ---------------- */
