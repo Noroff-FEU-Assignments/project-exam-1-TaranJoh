@@ -321,9 +321,17 @@ footer {
   display: none;
 }
 
+@keyframes displayDelay {
+  to {
+    opacity: 1;
+  }
+}
+
 #next-slide {
   right: -25px;
   bottom: 0px;
+  animation: displayDelay 0s 2s forwards;
+  opacity: 0;
 }
 
 /* ----------- BLOG LIST ---------------- */
