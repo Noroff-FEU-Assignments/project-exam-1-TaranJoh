@@ -343,12 +343,26 @@
     display: none;
   }
 
-  #modalImage {
-    border: solid #92a8b6 7px;
+  .modal-content {
+    max-width: 100%;
+  }
+
+  #popup-image {
+    border: none;
+    width: 100%;
+  }
+
+  .about-heading {
+    justify-self: start;
+    margin-bottom: 0px;
   }
 
   .about-heading img {
     width: 35px;
+  }
+
+  .about-heading h2 {
+    font-size: 1.2em;
   }
 
   .about-images img {

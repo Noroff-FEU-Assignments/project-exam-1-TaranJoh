@@ -1,6 +1,6 @@
 import { displayError } from "./components/error.js";
 
-const url = "https://chapterandverse.taranj.no/wp-json/wp/v2/posts?_embed=wp:term,wp:featuredmedia&per_page=12";
+const url = "hTtps://chapterandverse.taranj.no/wp-json/wp/v2/posts?_embed=wp:term,wp:featuredmedia&per_page=12";
 
 const latestPosts = document.querySelector(".latest-posts");
 

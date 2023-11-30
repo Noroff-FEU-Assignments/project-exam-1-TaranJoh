@@ -22,6 +22,7 @@ async function fetchAPI() {
     const loadMore = document.querySelector(".more-reviews-btn");
     const allPosts = document.querySelectorAll(".blog-list-post");
     const screenWidth = window.innerWidth;
+
     let currentItems = 9;
 
     loadMore.addEventListener("click", (e) => {
@@ -41,6 +42,7 @@ async function fetchAPI() {
 
         currentItems += 9;
       } else {
+        let currentItems = 10;
         for (let i = currentItems; i < currentItems + 10; i++) {
           if (allPosts[i]) {
             allPosts[i].style.display = "block";

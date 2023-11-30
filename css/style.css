@@ -321,12 +321,6 @@ footer {
   display: none;
 }
 
-@keyframes displayDelay {
-  to {
-    opacity: 1;
-  }
-}
-
 #next-slide {
   right: -25px;
   bottom: 0px;
@@ -549,6 +543,7 @@ footer {
   margin-left: 20px;
   margin-bottom: 5px;
   align-self: flex-end;
+  letter-spacing: 0.2em;
 }
 
 .about-copy {
@@ -735,4 +730,12 @@ footer {
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+
+/* ----------- ANIMATIONS ---------------- */
+
+@keyframes displayDelay {
+  to {
+    opacity: 1;
+  }
 }
