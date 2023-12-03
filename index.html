@@ -35,17 +35,17 @@
     <header>
       <a href="index.html">
         <div class="logo">
-          <img src="/images/logo.png" />
+          <img src="/images/logo.png" alt="Chapter and Verse logo: an open book with a steaming cup ontop" />
           <h1>Chapter and Verse</h1>
         </div>
       </a>
       <div class="search-container">
-        <input type="search" class="search" />
+        <input type="search" class="search" id="search" aria-label="search" />
         <i class="fa-solid fa-magnifying-glass"></i>
       </div>
       <nav>
-        <input type="checkbox" id="menu-checkbox" />
-        <label for="menu-checkbox" class="hamburger-menu">
+        <input type="checkbox" id="menu-checkbox" aria-label="menu" />
+        <label for="menu-checkbox" class="hamburger-menu" aria-label="menu">
           <i class="fa-solid fa-bars fa-lg"></i>
         </label>
         <ul class="nav-links">
@@ -55,7 +55,7 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="search-container-mobile">
-          <input type="search" class="search-mobile" />
+          <input type="search" class="search-mobile" id="#search-mobile" aria-label="search" />
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
       </nav>
@@ -66,10 +66,10 @@
       </div>
       <div class="latest-reviews">
         <h2>Latest reviews</h2>
-        <button id="prev-slide" class="slide-button"><i class="fa-solid fa-angle-left"></i></button>
+        <button id="prev-slide" class="slide-button" aria-label="left button"><i class="fa-solid fa-angle-left"></i></button>
 
         <div class="latest-posts carousel"></div>
-        <button id="next-slide" class="slide-button"><i class="fa-solid fa-angle-right"></i></button>
+        <button id="next-slide" class="slide-button" aria-label="right button"><i class="fa-solid fa-angle-right"></i></button>
       </div>
     </main>
     <footer>

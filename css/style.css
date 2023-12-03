@@ -18,7 +18,8 @@ form,
   font-family: "Roboto Condensed", sans-serif;
 }
 
-h3 {
+h3,
+.blog-list h2 {
   text-transform: uppercase;
   font-size: 0.9em;
   margin: 3px 0px;
@@ -201,7 +202,7 @@ footer {
 .cta {
   text-transform: uppercase;
   background-color: #92b6a5;
-  color: #fff;
+  color: #000;
   font-size: 1.1em;
   border-radius: 5%;
   cursor: pointer;

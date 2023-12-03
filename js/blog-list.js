@@ -14,7 +14,7 @@ async function fetchAPI() {
 
     for (let i = 0; i < posts.length; i++) {
       bookReviews.innerHTML += `<div class="blog-list-post"><a href="blog-post.html?id=${posts[i].id}"><img src="${posts[i]._embedded["wp:featuredmedia"][0].source_url}" alt="Book cover for ${posts[i]._embedded["wp:term"][1][0].name}">
-                            <h3>"${posts[i].title.rendered}"</h3>
+                            <h2>"${posts[i].title.rendered}"</h2>
                             <p class="title-author">${posts[i]._embedded["wp:term"][1][0].name} by ${posts[i]._embedded["wp:term"][0][0].name}</p></div>`;
     }
 
