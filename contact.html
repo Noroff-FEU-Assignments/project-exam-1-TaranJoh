@@ -64,28 +64,30 @@
       </nav>
     </header>
     <main class="contact">
-      <h2>Have something to tell us?</h2>
-      <p>
-        We love hearing from fellow book enthusiasts, authors, and anyone else that share our passion! Whether you have a question, want to
-        collaborate, or simply want to share your favorite book recommendations, we're all ears. Reach out to us using the form below, and we'll get
-        back to you as soon as we can.
-      </p>
-      <form class="contact-form">
-        <label for="name">Your name:</label>
-        <div class="form-error" id="name-error">*Please enter your first and last name</div>
-        <input type="text" name="name" id="name" />
-        <label for="email">Your email:</label>
-        <div class="form-error" id="email-error">*Please enter a valid email address</div>
-        <input type="email" name="email" id="email" />
-        <label for="subject">Subject:</label>
-        <div class="form-error" id="subject-error">*Please specify a subject for your message (min 15 characters)</div>
-        <input type="text" name="subject" id="subject" />
-        <label for="message">Your message:</label>
-        <div class="form-error" id="message-error">*Please enter your message (min 25 characters)</div>
-        <textarea name="message " id="message"></textarea>
-        <input type="submit" value="Send" class="cta submit" id="send-button" data-modal-target="#ty-message" />
-      </form>
-      <!-- <img src="/images/ai-generated-reader.png" /> -->
+      <div class="contact-info">
+        <h2>Have something to tell us?</h2>
+        <p>
+          We love hearing from fellow book enthusiasts, authors, and anyone else that share our passion! Whether you have a question, want to
+          collaborate, or simply want to share your favorite book recommendations, we're all ears. Reach out to us using the form below, and we'll get
+          back to you as soon as we can.
+        </p>
+        <form class="contact-form">
+          <label for="name">Your name:</label>
+          <div class="form-error" id="name-error">*Please enter your first and last name</div>
+          <input type="text" name="name" id="name" />
+          <label for="email">Your email:</label>
+          <div class="form-error" id="email-error">*Please enter a valid email address</div>
+          <input type="email" name="email" id="email" />
+          <label for="subject">Subject:</label>
+          <div class="form-error" id="subject-error">*Please specify a subject for your message (min 15 characters)</div>
+          <input type="text" name="subject" id="subject" />
+          <label for="message">Your message:</label>
+          <div class="form-error" id="message-error">*Please enter your message (min 25 characters)</div>
+          <textarea name="message " id="message"></textarea>
+          <input type="submit" value="Send" class="cta submit" id="send-button" data-modal-target="#ty-message" />
+        </form>
+      </div>
+      <img src="/images/ai-generated-reader.png" alt="Girl reading book" class="img-reader" />
       <div class="ty-message" id="ty-message">
         <div class="ty-header">
           <h2>Thank you for your message!</h2>

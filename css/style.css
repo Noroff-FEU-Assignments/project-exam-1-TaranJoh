@@ -598,8 +598,18 @@ footer {
 /* ----------- CONTACT ---------------- */
 
 .contact {
-  max-width: 600px;
+  max-width: 1200px;
   padding: 50px 50px 150px 50px;
+  display: grid;
+  grid-template-columns: 600px auto;
+  gap: 100px;
+}
+
+.img-reader {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  align-self: center;
 }
 
 .contact h2 {

@@ -139,6 +139,12 @@
     display: grid;
     margin: 0px;
   }
+
+  .contact {
+    max-width: 1000px;
+    grid-template-columns: 450px auto;
+    gap: 40px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -289,6 +295,17 @@
     font-size: 1.2em;
   }
 
+  .contact {
+    grid-template-columns: auto;
+    padding: 0px;
+  }
+
+  .contact-info {
+    padding: 50px 20px 20px 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+
   h1 {
     font-size: 0.9em;
     line-height: normal;
@@ -374,7 +391,10 @@
   }
 
   .contact {
-    padding: 50px 30px 100px 30px;
+  }
+
+  .contact-info {
+    padding: 50px 30px 20px 30px;
   }
 
   .ty-message {
