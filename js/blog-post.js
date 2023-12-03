@@ -2,6 +2,7 @@ import { displayError } from "./components/error.js";
 
 const container = document.querySelector(".book-review");
 const title = document.querySelector("title");
+const meta = document.querySelector('meta[name="description"]');
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -18,6 +19,7 @@ export async function getDetails() {
     console.log(review);
 
     title.innerHTML += ` ${review.title.rendered}`;
+    meta.content += ` Read our review of ${review._embedded["wp:term"][1][0].name} by ${review._embedded["wp:term"][0][0].name}!`;
 
     const newDate = new Date(review.date);
     const date = newDate.toLocaleDateString("en-GB");
