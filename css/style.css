@@ -300,7 +300,6 @@ footer {
 }
 
 .blog-list-post:hover,
-.post-thumbnail:hover,
 #sidebar-thumbnail:hover {
   filter: brightness(0.8);
   background-color: #e5f9fc;
