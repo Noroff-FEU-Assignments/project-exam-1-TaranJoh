@@ -299,11 +299,11 @@ footer {
   color: #302e2b;
 }
 
-.post-thumbnail:hover,
 .blog-list-post:hover,
+.post-thumbnail:hover,
 #sidebar-thumbnail:hover {
   filter: brightness(0.8);
-  background-color: #fcf5e5;
+  background-color: #e5f9fc;
   border-radius: 5px;
 }
 
@@ -761,5 +761,25 @@ footer {
 @keyframes displayDelay {
   to {
     opacity: 1;
+  }
+}
+
+.loader,
+.loader-sidebar {
+  border: 12px solid #fcf5e5;
+  border-top: 12px solid #6b867a;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: 50px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

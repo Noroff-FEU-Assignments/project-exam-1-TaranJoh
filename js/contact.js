@@ -56,11 +56,8 @@ function validateForm(event) {
     checkLength(subject.value, 14) === true &&
     checkLength(message.value, 24) === true
   ) {
-    console.log("it worked");
     tyMessage.classList.add("active");
     overlay.classList.add("active");
-  } else {
-    console.log("something is rotten in the state of denmark");
   }
 }
 

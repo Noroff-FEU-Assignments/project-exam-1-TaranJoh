@@ -1,8 +1,9 @@
 import { displayError } from "./components/error.js";
 
-const url = "hTtps://chapterandverse.taranj.no/wp-json/wp/v2/posts?_embed=wp:term,wp:featuredmedia&per_page=12";
+const url = "https://chapterandverse.taranj.no/wp-json/wp/v2/posts?_embed=wp:term,wp:featuredmedia&per_page=12";
 
 const latestPosts = document.querySelector(".latest-posts");
+const loader = document.querySelector(".loader");
 
 // fetches posts from wordpress
 async function fetchAPI() {
@@ -10,7 +11,7 @@ async function fetchAPI() {
     const response = await fetch(url);
     const posts = await response.json();
 
-    console.log(posts);
+    loader.style.display = "none";
 
     for (let i = 0; i < posts.length; i++) {
       latestPosts.innerHTML += `<div class="post-thumbnail"><a href="blog-post.html?id=${posts[i].id}"><img src="${posts[i]._embedded["wp:featuredmedia"][0].source_url}" alt="Book cover for ${posts[i]._embedded["wp:term"][1][0].name}">
@@ -19,6 +20,7 @@ async function fetchAPI() {
     }
   } catch {
     {
+      loader.style.display = "none";
       latestPosts.innerHTML = displayError(`Something went wrong ˙◠˙ <br> Please try again later!`);
     }
   }

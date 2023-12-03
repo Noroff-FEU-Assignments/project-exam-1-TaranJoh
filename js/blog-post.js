@@ -3,6 +3,8 @@ import { displayError } from "./components/error.js";
 const container = document.querySelector(".book-review");
 const title = document.querySelector("title");
 const meta = document.querySelector('meta[name="description"]');
+const loader = document.querySelector(".loader");
+const sidebarLoader = document.querySelector(".loader-sidebar");
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -16,10 +18,10 @@ export async function getDetails() {
   try {
     const response = await fetch(postUrl);
     const review = await response.json();
-    console.log(review);
 
     title.innerHTML += ` ${review.title.rendered}`;
     meta.content += ` Read our review of ${review._embedded["wp:term"][1][0].name} by ${review._embedded["wp:term"][0][0].name}!`;
+    loader.style.display = "none";
 
     const newDate = new Date(review.date);
     const date = newDate.toLocaleDateString("en-GB");
@@ -68,6 +70,7 @@ export async function getDetails() {
       });
     });
   } catch (error) {
+    loader.style.display = "none";
     container.innerHTML = displayError(`Something went wrong ˙◠˙ <br> Please try again later!`);
   }
 }
@@ -82,7 +85,7 @@ async function createSidebar() {
     const response = await fetch(embedUrl);
     const posts = await response.json();
 
-    console.log(posts);
+    sidebarLoader.style.display = "none";
 
     for (let i = 0; i < posts.length; i++) {
       if (i === 4) {
@@ -93,6 +96,7 @@ async function createSidebar() {
     }
   } catch {
     {
+      sidebarLoader.style.display = "none";
       sidebar.innerHTML = displayError(`Something went wrong ˙◠˙ <br> Please try again later!`);
     }
   }
