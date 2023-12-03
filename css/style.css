@@ -140,6 +140,14 @@ a h1 {
   display: none;
 }
 
+.navigation:hover {
+  font-weight: 800;
+}
+
+.navigation a:hover {
+  color: #a6fcd3;
+}
+
 li {
   display: inline-block;
   margin-right: 50px;
@@ -197,6 +205,7 @@ footer {
   width: 110px;
   border: solid black 1px;
   border-radius: 3px;
+  font-weight: 300;
 }
 
 .cta {
@@ -290,6 +299,14 @@ footer {
   color: #302e2b;
 }
 
+.post-thumbnail:hover,
+.blog-list-post:hover,
+#sidebar-thumbnail:hover {
+  filter: brightness(0.8);
+  background-color: #fcf5e5;
+  border-radius: 5px;
+}
+
 .carousel {
   overflow-x: auto;
   scrollbar-width: none;
@@ -341,6 +358,12 @@ footer {
 
 .categories ul {
   margin: 0px;
+}
+
+.categories li:hover {
+  font-style: italic;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .book-reviews {
