@@ -240,6 +240,10 @@
     padding: 10px 30px;
   }
 
+  cite {
+    font-size: 0.8em;
+  }
+
   .sidebar-posts {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
